@@ -32,5 +32,10 @@ ${azurerm_linux_virtual_machine.azvm_ubuntu[index].name} ansible_host=${azurerm_
 %{ for index, ip in azurerm_linux_virtual_machine.azvm_rhel ~}
 ${azurerm_linux_virtual_machine.azvm_rhel[index].name} ansible_host=${azurerm_linux_virtual_machine.azvm_rhel[index].public_ip_address} ansible_user=${azurerm_linux_virtual_machine.azvm_rhel[index].admin_username} ansible_ssh_private_key_file=./${local_file.local_keyfile.filename} ansible_become=true ansible_ssh_common_args='-o StrictHostKeyChecking=no' 
 %{ endfor ~}
+
+[sles]
+%{ for index, ip in azurerm_linux_virtual_machine.azvm_sles ~}
+${azurerm_linux_virtual_machine.azvm_sles[index].name} ansible_host=${azurerm_linux_virtual_machine.azvm_sles[index].public_ip_address} ansible_user=${azurerm_linux_virtual_machine.azvm_sles[index].admin_username} ansible_ssh_private_key_file=./${local_file.local_keyfile.filename} ansible_become=true ansible_ssh_common_args='-o StrictHostKeyChecking=no' 
+%{ endfor ~}
 EOF
 }

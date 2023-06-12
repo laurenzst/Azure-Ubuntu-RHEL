@@ -12,13 +12,13 @@
 #-[azureTenant]---------------------------------------
 # (String) Azure Tenant ID
 # default Value: no value
-azureTenant = ""
+azureTenant = "aa487a7d-0a99-4ec8-9a84-2952762a0131"
 
 
 #-[azureSubscription]---------------------------------------
 # (String) Azure Subscription ID
 # default Value: no value
-azureSubscription = ""
+azureSubscription = "c6ba4546-1156-4f0a-a59f-38232d91a44a"
 
 
 #-[rgAddition]---------------------------------------
@@ -57,7 +57,7 @@ rgAddition = 0
 #-[cShortName]---------------------------------------
 # (String) Contraction of Customer- or personal Name | example: rg-stz-chn-k8s-0 (stz)
 # default Value: no value
-cShortName = ""
+cShortName = "stz"
 
 
 #-[servicename]---------------------------------------
@@ -76,7 +76,7 @@ UbuntuVMname = "ubt-test-"
 #-[UbuntuNodeCount]--------------------------------------
 # (Number) Kubernetes Master Node Count | example: 2 --> 2 Ubuntu Nodes will be created
 # default Value: no value
-UbuntuNodeCount = 1
+UbuntuNodeCount = 2
 
 
 # Variables for RedHat Linux Enterprise:
@@ -90,3 +90,16 @@ RHELVMname = "rhel-test-"
 # (Number) Kubernetes Master Node Count | example: 2 --> 2 RHEL Nodes will be created
 # default Value: no value
 RHELNodeCount = 1
+
+
+# Variables for RedHat Linux Enterprise:
+#------------------------------------------------------------------------------------------------------
+#-[SLESVMname]---------------------------------------
+# (String) Virtual Machine Kubernetes Master Name | example: k8s-master-0
+# default Value: k8s-master-
+SLESVMname = "sles-test-"
+
+#-[SLESNodeCount]--------------------------------------
+# (Number) Kubernetes Master Node Count | example: 2 --> 2 SLES Nodes will be created
+# default Value: no value
+SLESNodeCount = 1

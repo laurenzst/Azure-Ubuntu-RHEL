@@ -5,7 +5,7 @@
 #   ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
 
 
-#   Date:          2023.04.17
+#   Date:          2023.05.22
 #   Creator:       Laurenz Ströbele, laurenz.stroebele@umb.ch | Team Linux Operations UMB AG
 #   Filename:      Ubuntu-22_04-tls-gen2.tf
 #   Description:   Resource Creation for Azure Ubuntu Virtual Machine(s)

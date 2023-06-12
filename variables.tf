@@ -114,3 +114,18 @@ variable "RHELNodeCount" {
     type        = number
     description = "Number of RHEL Nodes" 
 }
+
+
+###################################################
+# Virtual Machine Ubuntu Name
+variable "SLESVMname" {
+    type        = string
+    description = "Default Virtual Machine name"
+    default     = "k8s-master-"
+}
+
+# Virtual Machine Quantity of Kubernetes Masters
+variable "SLESNodeCount" {
+    type        = number
+    description = "Number of SLES Nodes" 
+}
